@@ -5,7 +5,7 @@ services:
 before_install:
   - docker build -t oke/react-test -f ./client/Dockerfile.dev ./client
 
-scripts:
+script:
   - docker run oke/react-test npm test -- --coverage
 
 after_success:
@@ -20,6 +20,3 @@ after_success:
   - docker push oke/multi-nginx ./nginx
   - docker push oke/multi-server ./server  
   - docker push oke/multi-worker ./worker
-
-
-
