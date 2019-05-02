@@ -16,7 +16,7 @@ after_success:
   # Ingresar a docker hub
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Tomar las imagenes y hacer push a docker hub
-  - docker push oke/multi-client ./client
-  - docker push oke/multi-nginx ./nginx
-  - docker push oke/multi-server ./server  
-  - docker push oke/multi-worker ./worker
+  - docker push oke/multi-client
+  - docker push oke/multi-nginx 
+  - docker push oke/multi-server
+  - docker push oke/multi-worker
