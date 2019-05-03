@@ -1,6 +1,29 @@
 {
     "AWSEBDockerrunVersion": 2,
     "containerDefinitions": [
-        
+        {
+            "name": "client",
+            "image": "oke123/multi-client",
+            "hostname": "client",
+            "essential": false
+        },
+        {
+            "name": "server",
+            "image": "oke123/multi-server",
+            "hostname": "api",
+            "essential": false
+        },
+        {
+            "name": "worker",
+            "image": "oke123/multi-worker",
+            "hostname": "worker",
+            "essential": false
+        },
+        {
+            "name": "nginx",
+            "image": "oke123/multi-nginx",
+            "hostname": "nginx",
+            "essential": true
+        }
     ]
 }
