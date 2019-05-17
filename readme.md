@@ -49,8 +49,8 @@ Creo una imagen desde:
 ### AWS User
 
 multi-docker-deployer
-AWS_ACCESS_KEY: id clave de acceso: AKIAUG2TLNCDAVZTOAWV
-clave de acceso secreta: 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
+AWS_ACCESS_KEY: id clave de acceso: <>
+clave de acceso secreta: <>
 
 
 
